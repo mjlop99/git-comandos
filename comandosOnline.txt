@@ -1,0 +1,14 @@
+pasos para subir tus proyectos a gitHub
+
+#colocamos el url de nuestro repositorio remoto de gitHub
+1. git remote add origin (url)
+#verificamos que la url se haya guardado
+2. git remote
+   git remote -v
+#traemos la version del remopistorio remoto y hacemos merge para hacer un commit con los archivos de ambas partes
+podemos usar git merge o git fetch o simplemente 
+
+3. git pull origin master --allow-unrelated-histories
+#ahora podemos enviar los cambios al repositorio remoto
+
+4. git push origin master:main

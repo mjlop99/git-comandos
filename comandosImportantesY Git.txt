@@ -1,0 +1,85 @@
+apt-get (programa) instala programas
+apt-get update intala las actualizacion de los paquetes de los programas
+sudo apt-get permiso de administrador en caso de denegar la accion
+sudo apt-get install git instala git en la terminal
+
+comandos de git
+
+git init: lo usamos para determinar la carpeta en la que vamos a trabajar.
+
+git status: lo usamos para saber si tenemos un archivo añadido o borrado en nuestro proyecto, 
+para saber en la rama en la que estamos y si tenemos commits.
+
+git add: es para añadir un archivo a nuestra rama seguidamente ponemos entre comillas el nombre 
+de nuestro archivo o poner un punto para añadir todos los archios de nuestra carpeta.
+
+git commit -m: se envia a repositrio local lo que estaba en staging
+
+git commit -am: se combinan git add y git commit -m para archivos previamete añadidos
+
+git rm + nombreArchivo: lo usamos para borrar un archivo que hayamos añadido, para eliminarlo por completo de nuestra rama usamos
+
+git rm --cached + nombreArchivo: Elimina los archivos de nuestro repositorio local y del área de staging, pero los mantiene en nuestro 
+disco duro. Básicamente le dice a Git que deje de trackear el historial de cambios de estos archivos, por lo que 
+pasaran a un estado untracked.
+
+git rm --force + nombreArchivo: Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder 
+al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar 
+comandos más avanzados).
+
+git commit: se usa para añadir un commit a nuestra rama, también podemos ponerle un -m 
+seguidamente ponemos entre comillas nuestro ensaje.
+
+git config: muestra configuraciones de git también podemos usar –list para mostrar la configuración por 
+defecto de nuestro git y si añadimos --show-origin inhales nos muestra las configuraciones guardadas y su ubicación.
+
+git config --global user.name: cambia de manera global el nombre del usuario, seguidamente ponemos entre comillas 
+nuestro nombre.
+
+git config --global user.email: cambia de manera global el email del usuario, seguidamente ponemos entre comillas 
+nuestro nombre.
+
+git log: se usa para ver la historia de nuestros archivos, los commits, el usuario que lo cambió, cuando se 
+realizaron los cambios etc. seguidamente ponemos el nombre de nuestro archivo.
+
+git log --stat: muestra los cambios especificos de cada archivo de acuerdo a los commits
+
+git log --graph:nos da una vision de grafico de las ramas y como se fusionaron(merge),
+ recomiendo hacer eso despues de fusionar
+
+git show: muestra los datos y cambios que ha tenido el repositorio del archivo
+
+git diff + Id del comit(hash):Para ver los cambios entre tu entorno de trabajo y tu área de ensayo (staging) es decir compara dos versiones y se
+necesita los dos codigos de commit de amabas
+
+git checkout + hash: nos permite viajar en el tiempo. Podemos volver a cualquier versión anterior de un archivo 
+específico o incluso del proyecto entero. Esta también es la forma de crear ramas y movernos entre ellas.
+
+git reset:En este caso, no solo “volvemos en el tiempo”, sino que borramos los cambios que hicimos después de 
+este commit.
+
+git reset --hard + hash:elimina todos los commits futuros a el y no mantiene los cambios en el staging area ni el working 
+directory de los commits eliminados
+
+git reset --soft + hash elimina todos los commit futuros a el y mantiene los cambiosregistrados(en el commit eliminado)
+
+git reset HEAD:, lo único que haremos será mover estos cambios de Staging a Unstaged. Seguiremos teniendo los últimos
+cambios del archivo, el repositorio mantendrá el archivo (no con sus últimos cambios, pero sí con los últimos en los que 
+hicimos commit) y no habremos perdido nada.
+
+git checkout + hash + nombreArchivo:permite volver al archivo a un estado de acuerdo aun commit identificado por su hash 
+
+git checkout master + nombreArchivo: nos volver a la version del ultimo commit hecho en master
+
+git branch nombreRama: crea una nueva rama
+
+git merge nombreBranch:combina ramas,a la rama en la que nos encontramos traemos cambios y contenido de la rama a la que
+nombramos
+
+git checkout nombrRama:cambia a la rama
+
+git checkout -b "nombre_rama":fuciona git branch nombreRama y git checkout nombrRama
+
+
+
+

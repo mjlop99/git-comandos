@@ -1,0 +1,9 @@
+1-ejecutar cmd como administrador
+2-ejecutar el comando wsl --install
+3-reiniciar el pc y se te abrira automaticamente ubunto aunque con error
+4-ejecutas la terminal y el comando wsl --set-default-version 1
+5-ingresas usuario y contraseña que quiera(mjlopez99,asterisco99LopezDeveloper)
+
+en caso de querer desintalar wsl
+1- ejecutar caracteriscas de windows en el buscador 
+2-desenmar subsitema de linux
